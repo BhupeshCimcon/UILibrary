@@ -1,3 +1,5 @@
+/* Main Styles */
+
 main{
     height: 100vh;
     width: 100vw;
@@ -29,19 +31,80 @@ footer{
     top: 0;
     width: 82.2vw
 }
+
+/* Elements CSS Styles */
+
+/* Basic Button CSS Styles */
 .basicButton{
     background-color: #f7f7f7;
     border: 1px solid #c4c4c4;
-    border-radius: 0%;
+    border-radius: 10%;
 }
-.backdrop{
-    background-color: rgba(0, 0, 0, 0.192);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.white-loader{
+
+/* Colored Button CSS Styles */
+.coloredButton{
+    background-color: #1C6DCE;
+    border: 1px solid #f7f7f7;
+    border-radius: 10%;
     color: white;
+}
+.coloredButton:hover{
+    background-color: #2186C3;
+    border: 1px solid #f7f7f7;
+    border-radius: 10%;
+    color: white;
+}
+.coloredButton:active{
+    background-color: #2186C3;
+    border: 1px solid #f7f7f7;
+    border-radius: 10%;
+    color: white;
+}
+
+
+/* Outline Button CSS Styles */
+.outlineButton{
+    background-color: transparent;
+    border: 1px solid #050505;
+    border-radius: 10%;
+}
+.outlineButton:hover{
+    background-color: rgba(255, 255, 255, 0.363);
+    border: 1px solid #050505;
+    border-radius: 10%;
+}
+.outlineButton:active{
+    background-color: rgba(255, 255, 255, 0.363);;
+    border: 1px solid #050505;
+    border-radius: 10%;
+}
+
+/* Outline Button CSS Styles */
+.textButton{
+    text-decoration: none;
+    padding: 0 !important;
+    color: black;
+}
+.textButton:hover{
+    border: none;
+    color: black;
+}
+.textButton:not(:hover){
+    border: none;
+    color: black;
+}
+
+/* Icon Button CSS Styles */
+.iconButton{
+    background-color: #f7f7f7;
+    border: 1px solid #c4c4c4;
+    border-radius: 10%;
+}
+.iconButtonLeft{
+    border-right: none;
+    padding-right: 0;
+}
+.iconButtonRight{
+    border-left: none;
+    padding-left: 0;
 }
