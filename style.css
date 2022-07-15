@@ -100,11 +100,36 @@ footer{
     border: 1px solid #c4c4c4;
     border-radius: 10%;
 }
+.iconButton:hover{
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+}
+.iconButton:not(:hover){
+    border: 1px solid #c4c4c4;
+}
 .iconButtonLeft{
     border-right: none;
     padding-right: 0;
 }
+.iconButtonLeft:hover{
+    border: none;
+}
+.iconButtonLeft:not(:hover){
+    border: none;
+}
 .iconButtonRight{
     border-left: none;
     padding-left: 0;
+}
+.iconButtonRight:hover{
+    border: none;
+}
+.iconButtonRight:not(:hover){
+    border: none;
+}
+/* Rounded Button CSS Styles */
+.isRounded{
+    border-radius: 20px !important;
+    padding-left: 20px;
+    padding-right: 20px;
 }
