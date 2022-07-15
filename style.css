@@ -133,3 +133,58 @@ footer{
     padding-left: 20px;
     padding-right: 20px;
 }
+/* Rounded Button CSS Styles */
+.isRoundedInput{
+    border-radius: 20px !important;
+}
+.isRoundedInput .iconButtonRight{
+    padding-right: 20px;
+}
+.isRoundedInput .loadingButtonLeft{
+    border-radius: 20px !important;
+    padding-left: 20px;
+}
+.isRoundedInput .loadingButtonRight{
+    padding-right: 20px;
+}
+.isRoundedInput .iconButtonLeft{
+    border-radius: 20px !important;
+    padding-left: 20px;
+}
+/* Loading Button CSS Styles */
+.loadingButton{
+    background-color: #f7f7f7;
+    border: 1px solid #c4c4c4;
+    border-radius: 10%;
+}
+.loadingButton:hover{
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+}
+.loadingButton:not(:hover){
+    border: 1px solid #c4c4c4;
+}
+.loadingButtonLeft{
+    border-right: none;
+    padding-right: 0;
+}
+.loadingButtonLeft:hover{
+    border: none;
+}
+.loadingButtonLeft:not(:hover){
+    border: none;
+}
+.loadingButtonRight{
+    border-left: none;
+    padding-left: 0;
+}
+.loadingButtonRight:hover{
+    border: none;
+}
+.loadingButtonRight:not(:hover){
+    border: none;
+}
+.loadingButton .buttonSpinner{
+    width: 1rem;
+    height: 1rem;
+}
