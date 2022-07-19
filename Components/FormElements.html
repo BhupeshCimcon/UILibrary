@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> UI Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <main class="row">
+        <div class="sideBardiv col-2">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="height: 100%;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                      <a href="../index.html" class="nav-link active" aria-current="page">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../Example.html" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                        Example
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../Components.html" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                        Components
+                      </a>
+                    </li>
+                <li>
+                  <a href="../Elements.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                    Elements
+                  </a>
+                </li>
+                <li>
+                  <a href="../Layout.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                    Layout
+                  </a>
+                </li>
+              </ul>
+                <hr>
+                <div class="dropdown">
+                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="maindiv col-10">
+            <div class="navSection">
+                    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-4 border-bottom">
+                      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                        <h4 style="padding-left: 20px;"> UI Library</h4>
+                      </a>
+                
+                      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+                      </ul>
+                
+                      <div class="col-md-3 text-end">
+                        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                        <button type="button" class="btn btn-primary">Sign-up</button>
+                      </div>
+                    </header>
+            </div>
+            <section class="py-5 px-5 text-left container mt-5 bg-light">
+              <div class="row pt-lg-5">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                  <h1 class="fw-light">Form Elements</h1>
+                  <p class="lead text-muted">
+                      The classic Form Elements, in different colors, sizes, and states
+                  </p>
+                  </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Input with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The classic Input, without hover state and active state.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Lable Here!</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="input placeholder here..." aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">Helper Text Here!</div>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Horizontal Input with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The Horizontal Input, with Input with Lable and Helper Text
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Lable Here!</label>
+                  </div>
+                  <div class="col-auto">
+                    <input type="password" id="inputPassword6" class="form-control" placeholder="input placeholder here..." aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                      Helper Text Here!
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Select with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The classic Select, without hover state and active state.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <label for="inputPassword6" class="col-form-label">Lable Here!</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <span id="passwordHelpInline" class="form-text">
+                      Helper Text Here!
+                    </span>
+                  </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Select with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The classic Select, without hover state and active state.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <label for="inputPassword6" class="col-form-label">Lable Here!</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Default radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Default checked radio
+                      </label>
+                    </div>
+                    <span id="passwordHelpInline" class="form-text">
+                      Helper Text Here!
+                    </span>
+                  </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Horizontal Select with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The Horizontal Select, without hover state and active state.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <label for="inputPassword6" class="col-form-label">Lable Here!</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                    </div>
+                    
+                    <span id="passwordHelpInline" class="form-text">
+                      Helper Text Here!
+                    </span>
+                  </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Select with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The classic Select, without hover state and active state.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <label for="inputPassword6" class="col-form-label">Lable Here!</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+                    </div>
+                    <span id="passwordHelpInline" class="form-text">
+                      Helper Text Here!
+                    </span>
+                  </div>
+              </div>
+            </section>
+            <section class="py-5 mb-5 px-5 text-left container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-8 mx-auto">
+                      <h1 class="fw-light">Horizontal Select with Lable and Helper Text</h1>
+                      <p class="lead text-muted">
+                          The Horizontal Select, without hover state and active state.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <label for="inputPassword6" class="col-form-label">Lable Here!</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                    </div>
+                    <span id="passwordHelpInline" class="form-text">
+                      Helper Text Here!
+                    </span>
+                  </div>
+              </div>
+            </section>
+            <footer>
+                <span>© 2022 Company, Inc</span>
+            </footer>
+            </div>
+        </div>
+    </main>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
