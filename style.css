@@ -38,26 +38,26 @@ footer{
 .basicButton{
     background-color: #f7f7f7;
     border: 1px solid #c4c4c4;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 /* Colored Button CSS Styles */
 .coloredButton{
     background-color: #1C6DCE;
     border: 1px solid #f7f7f7;
-    border-radius: 10%;
+    border-radius: 5px;
     color: white;
 }
 .coloredButton:hover{
     background-color: #2186C3;
     border: 1px solid #f7f7f7;
-    border-radius: 10%;
+    border-radius: 5px;
     color: white;
 }
 .coloredButton:active{
     background-color: #2186C3;
     border: 1px solid #f7f7f7;
-    border-radius: 10%;
+    border-radius: 5px;
     color: white;
 }
 
@@ -66,17 +66,17 @@ footer{
 .outlineButton{
     background-color: transparent;
     border: 1px solid #050505;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 .outlineButton:hover{
     background-color: rgba(255, 255, 255, 0.363);
     border: 1px solid #050505;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 .outlineButton:active{
     background-color: rgba(255, 255, 255, 0.363);;
     border: 1px solid #050505;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 /* Outline Button CSS Styles */
@@ -98,7 +98,7 @@ footer{
 .iconButton{
     background-color: #f7f7f7;
     border: 1px solid #c4c4c4;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 .iconButton:hover{
     background-color: #fff;
@@ -155,7 +155,7 @@ footer{
 .loadingButton{
     background-color: #f7f7f7;
     border: 1px solid #c4c4c4;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 .loadingButton:hover{
     background-color: #fff;
@@ -199,4 +199,68 @@ footer{
     border-color: #dbdbdb;
     box-shadow: none;
     opacity: .5;
+}
+.icon-input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+}
+.icon-input{
+    border: none;
+    box-shadow: none;
+    padding: 0 0.75rem;
+}
+.icon-input-left{
+    color: #ced4da;
+}
+.icon-input-right{
+    color: #ced4da;
+}
+
+.fileButton{
+    background-color: #f7f7f7;
+    border: 1px solid #c4c4c4 !important;
+    border-radius: 5px !important;
+}
+.fileButton:hover{
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+}
+.fileButton:not(:hover){
+    border: 1px solid #c4c4c4;
+}
+.left-breadcrumb{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.center-breadcrumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-breadcrumb{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+.breadcrumbv2 .breadcrumb-item:first-child {
+    padding-bottom: 4px;
+  }
+.breadcrumbv2 .breadcrumb-item+.breadcrumb-item::before {
+    padding-top: 3px;
+    padding-bottom: 0px;
+    content: url(./Assests/img/arrow-right.svg)
+}
+.breadcrumbv3 .breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, "<");
+}
+.breadcrumbv4 .breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, "|");
 }
